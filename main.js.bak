@@ -1,0 +1,7 @@
+//*********** main.js *********** 
+
+include("../AllScript/common.js") 
+include("../AllScript/myfunc.js") 
+include("../AllScript/walkwarpquest.js") 
+include("drop_con.js")
+include("../AllScript/script.js") 

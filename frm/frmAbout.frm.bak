@@ -1,0 +1,238 @@
+VERSION 5.00
+Begin VB.Form frmAbout 
+   BackColor       =   &H00FFFFFF&
+   BorderStyle     =   3  'Fixed Dialog
+   Caption         =   "Something about Truebot ..."
+   ClientHeight    =   4440
+   ClientLeft      =   2340
+   ClientTop       =   1935
+   ClientWidth     =   4485
+   ClipControls    =   0   'False
+   Icon            =   "frmAbout.frx":0000
+   LinkTopic       =   "Form2"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   ScaleHeight     =   3064.567
+   ScaleMode       =   0  'User
+   ScaleWidth      =   4211.647
+   ShowInTaskbar   =   0   'False
+   StartUpPosition =   2  'CenterScreen
+   Begin VB.TextBox txtAbout 
+      Height          =   3015
+      Left            =   60
+      MultiLine       =   -1  'True
+      ScrollBars      =   2  'Vertical
+      TabIndex        =   1
+      Text            =   "frmAbout.frx":078A
+      Top             =   1380
+      Width           =   4395
+   End
+   Begin VB.PictureBox picIcon 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BorderStyle     =   0  'None
+      ClipControls    =   0   'False
+      ForeColor       =   &H80000008&
+      Height          =   1125
+      Left            =   0
+      MouseIcon       =   "frmAbout.frx":0790
+      MousePointer    =   99  'Custom
+      Picture         =   "frmAbout.frx":0A9A
+      ScaleHeight     =   790.125
+      ScaleMode       =   0  'User
+      ScaleWidth      =   3160.5
+      TabIndex        =   0
+      Top             =   0
+      Width           =   4500
+   End
+   Begin VB.Label Label1 
+      BackColor       =   &H00FFFFFF&
+      Caption         =   "Truebot v"
+      Height          =   255
+      Left            =   3360
+      TabIndex        =   3
+      Top             =   1140
+      Width           =   1695
+   End
+   Begin VB.Label Label3 
+      BackColor       =   &H00FFFFFF&
+      Caption         =   "http://tscafe.truedev.net/forum"
+      Height          =   255
+      Left            =   60
+      MouseIcon       =   "frmAbout.frx":2B57
+      MousePointer    =   99  'Custom
+      TabIndex        =   2
+      Top             =   1140
+      Width           =   2355
+   End
+End
+Attribute VB_Name = "frmAbout"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Sub Form_Load()
+    Label1.Caption = Label1.Caption & App.Major & "." & App.Minor & "." & App.Revision
+    txtAbout.Text = "TrueBot's Updating History"
+    txtAbout.Text = txtAbout.Text & vbCrLf & "==========================================="
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.3.4"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้บัก  PlayerID 0 online (bug ส่งของ/ซิบ คน on ทีหลังไม่ได้จุดนึง)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่ม property ts.lastNPCtalk เอาไว้ดูว่า dialog สุดท้ายมาจากไหน"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ย้าย text เกี่ยวกับการ party ไปอยู่ช่อง System"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ย้าย text เกี่ยวกับการ ส่งของ ไปอยู่ช่อง System"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - บังคับ font เป็น MS Sans Serif แก้ปัญหาแสดงผลเป็น font Tahoma จากชื่อที่มีสัญลักษณ์พิเศษ"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.3.3"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - Ep8 integrated"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไขระบบอ่านไฟล์ item.dat ให้รองรับไฟล์ของ Ep8"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่มข้อมูล Skill/NPC ของ Ep8"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่มระบบสู้ npc ที่ไม่มีในฐานข้อมูล (คิดว่าน่าจะเอาไปใช้กับคนได้)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่ม event CombatSceneDialog() ใช้กับเควสที่มี ฉากต่อสู้หรือ movie ให้ดู เช่น เควสที่เจออุยเอี๋ยน(ตุ้ม99)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.3.2"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เก็บตกบักเล็กน้อย"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.3.1"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ bug จากสกิลสลายสภาวะทุกประเภท"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.3.0"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ bug และเปลี่ยนการแสดงผล combat ใหม่"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ bug จากสกิลที่ติดสถานะทั้งหมด"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่มช่อง Free debug โดยสามารถใช้งานได้จากคำสั่ง FreeDebug(""text""); และดึงข้อมูลออกด้วย GetFreedebug();"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - optimize code บางส่วน ตัด control ที่ไม่ได้ใช้จริงออก"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ปัญหา socket error แล้วค้าง ให้สามารถ reconnect ได้"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.9"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถขี่ม้าเทพคุนหลุนได้ทุกธาตุรวมถึงม้าใหม่ๆที่จะเพิ่มมาในอนาคต (npcid 18xxx)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เปลี่ยนระบบแสดงเวลาที่ต้องการสำหรับเลเวลถัดไปใหม่"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.8"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถตอบ dialog ในการสร้างอุปกรณ์การรบ ได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.7"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไข function RecvDropItems(itemname ,num) เป็น RecvDropItems(itemid ,num)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่มคำสั่ง getItemName(itemid)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.6"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไขให้ ปาโต้เยาพัสดุ,ปาโต้เยาพเนจร ส่งของได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.5"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถตอบ dialog ในการขุดบ้าน ทำนา,อื่นๆ ได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถแยกแยะสร้อย/ดาวหลี่ซู่ทั้ง 2 ตัวได้"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.4"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไขแถบ exp ของขุนพลจุติรอบ 2"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.3"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - Save ข้อมูล Mail ทั้งในกองทัพและในสหายสนิทลงในไฟล์ Mail.txt แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้บอทเอ๋อจากการดรอปของ ผ้าโพกไท่ผิง แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.2"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ดูข้อมูลลำดับการประลองได้ที่แถบ PlayerOnline แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.1"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถย้าย/แยก/รวม ช่อง item ได้แล้ว โดยการย้ายมากกว่าที่มีอยู่ จะเปนการย้ายเท่าที่มี"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถหลอมรวม item ได้แล้ว โดยการหลอมรวม จะไม่สามารถ หลอม slot ว่าง (slot0) หรือ slot เดียวกันได้ (เช่นหลอม slot1 กับ slot1)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.2.0"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไขชื่อผู้เล่น ทั้งไม่จุติ และ จุติทั้ง 2 รอบ"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แสดงสายวีรบุรุษในช่องชื่อผู้เล่นออนไลน์"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - รู้จัก npc ใหม่ๆแล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - รู้จัก skill ใหม่ๆแล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไข bug exp เอ๋อ ของผู้เล่นจุติทั้ง 2 รอบ"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไข bug ที่เกิดจากการไม่ได้ใส่เสื้อผ้า"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ตราอัญเชิญ /ตรา atk,agi / ตรา *2,*1.5 จะแยกช่องกันทั้งในตัว+ในเป้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.1.7"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่มระบบป้องกัน item ที่ไม่รู้จัก"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้หน้า Online Player ให้มาอยู่ที่หน้าจอหลัก"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้หน้า Army และ OnlinePlayer ให้สามารถเรียงลำดับได้ และ click เพื่อนำชื่อไปใช้ได้ทันที"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ bug remove undefined-item in dictionary (ลดปัญหา OnlinePlayer bug / get id = -1 ได้อีกระดับ)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ bug ภายในหลายๆจุดเพื่อความเสถียร"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.1.6"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เปลี่ยน interface ใหม่ โดยปุ่ม Show/Hide system จะเอาไว้ใช้ในขณะที่อยู่ใน Box chat เท่านั้น"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่มการคำนวนเวลาในการอัพเลเวล"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่มหน้าต่างแสดงรายละเอียดกองทัพ"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถตรวจจับ gm และตัดสายได้จาก menu"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถเซฟรายละเอียดของเมนูไว้ได้แล้ว ไม่จำเป็นต้องเขียนใน script อีก (แต่ยังคงแก้ไขโดย script ได้เหมือนเดิม)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถแสดง status ขุนพล โดยการเอาเมาส์ชี้ที่ชื่อ ซึ่งจะอัพเดทตลอดเวลา รวมทั้งเวลาขุนเลเวลอัพด้วย เป็นการแก้ปัญหาเวลาขุนตายแล้วค่า fai ไม่ลดไปในตัว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.1.5"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ตรวจสอบเวลา airtime ที่เหลืออยู่ได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่ม event ในการตรวจสอบ chat ช่อง กิล/พันธมิตรได้แก่ OnGuildMsg, OnAllyMsg โดยของเก่าที่มีอยู่แล้วจะมี OnPublicMsg, OnWhisperMsg, OnPrivateMsg, OnGodMsg ซึ่งทุกคำสั่งจะใช้เหมือน OnPrivateMsg ที่คุ้นเคยกันดี"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.1.4"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ bug exp ขุนเอ๋อเหนเป็นล้านๆตั้งแต่แรก"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ bug getid player ไม่ได้หลังจากเปิดไปนานๆ (bug id 0 offline)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ใช้สกิลที่ 4 ของขุนพลได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ยาคืนวิญญาณทุกชนิด ไม่สามารถกินแทน sp ได้อีกต่อไป (isSPItem() จะ return false)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไขการตัดสายตอน 9 โมง"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เปลี่ยนการแสดงข้อความของ GM จากคำว่าระบบ เป็นชื่อ GM ที่ประกาศ"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.1.3"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถ disconnect ตัวเองเมื่อ net หลุดหรือค้างได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถส่งของกับ ปาโต้เยาอุนจิ ได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถขี่ ม้าเทพคุนหลุน ได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - item ต่อไปนี้ไม่ใช่ ประเภทของกินอีกต่อไป : ยาคืนวิญญาณ, ยาวิญญาณม่วง, ยาวิญญาณเขียว, ยาวิญญาณแดง, ยาคืนวิญญาณทอง, ยาเก้าวิญญาณ (isHPItem() จะ return false)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.1.2"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เอา duplicate login alert ออก"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เปลี่ยนช่อง chat เป็น dropdown และ จำข้อความเดิมได้"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ทดสอบระบบ ต่อเองตอน9 โมงโดยไม่ใช้ script (กัน GM เปิดปิดนอกเวลา)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถมองเห็นวารป id ที่ผ่านมาได้ แล้วเห็นชื่อแมพที่อยู่ปัจจุบันได้(ต้องวารปก่อน 1ครั้ง)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แสดงข้อความของ GM ได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไขหน้าต่าง PlayerName แสดงผลนอกจอสำหรับ mode 800*600"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.1.1"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่ม event NpcWalkThenDialog() ใช้กับเควสที่มี npc เดินมาชนเราก่อนสู้ เช่น เควสอู่อันกั๋ว หรือ เควสโจเป้า(เควสนี้ไม่แน่ใจนะว่าใช้ได้ป่าว)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.1.0"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เก็บตก bug รอบใหญ่ อีกรอบ -..-"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.0.9"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เอาส่วน debug unknow_packet ออกเพราะทำให้ทำงานได้ช้า และปกติไม่ได้ใช้งาน"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.0.8"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไข bug exp/min ไม่แสดงผล"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.0.7"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เยาเป้ที่หลายๆคนรอคอย ช่วยกันทดสอบนะงับ ไม่รุจะมีบักตรงไหนรึปล่าว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ไข interface ในการ chat เล็กน้อยคิดว่าน่าจะชอบกัน"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ทดสอบระบบ exp/min แบบใหม่โดยคิดจากหน่วยวินาทีในทุกๆครั้งที่สู้ โดยใช้สูตร exp/min = (ExpGet/SecondOnline)*60"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ไม่สามารถใช้กับ server อื่นนอกจาก ไทย ได้อีกต่อไป"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.0.6"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ทดลองเอา inventory มาไว้ข้างนอกจะได้ใช้กันได้ง่ายๆ"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ให้ text แสดงของดรอปไปอยู่ข้างบน"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - เพิ่มส่วน setting สามารถปรับสีช่อง chat ได้ตามใจชอบแล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ bug getid คน online ทีหลังได้ -1 (จาก error dictionary error : duplicating index)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ไม่สามารถกด enter โดยไม่มีข้อความได้แล้ว กันปุ่ม enter ค้างหรือ lag"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.0.5"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้แถบ exp ของผู้เล่นจุติให้มองเห็นได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้ runtime-error9 จากการใช้ cdelay ถ่วงเพื่อ login"
+    txtAbout.Text = txtAbout.Text & vbCrLf & "   (ไม่รู้ว่าแก้ตรงจุดรึปล่าวนะ ^^;)"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - สามารถกด F5 เพื่อโหลด script ใหม่ได้แล้ว"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - ตัด control ที่ไม่ได้ใช้งานทิ้งทั้งหมด น่าจะช่วยให้ทำงานเร็วขึ้นและประหยัดหน่วยความจำลงหน่อย อิอิ"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "TrueBot 3.0.4"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - แก้อะไรมั่งไม่รู้คุงกิ๊กมะได้บอกมา =p"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - กระผมนาย X CroSs ได้รับมอบหมายให้รับช่วงพัฒนา TrueBot (ไทย) ต่อจากคุงกิ๊กอย่างเป็นทางการ ยังไงก้อฝากเนื้อฝากตัวด้วยนะครับ ^^V"
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "==========================================="
+    txtAbout.Text = txtAbout.Text & vbCrLf & ""
+    txtAbout.Text = txtAbout.Text & vbCrLf & "Credit ::"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - Mr.Truebot (คุณกิ๊ก) : Main Developer"
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - X CroSs : Thai-TrueBot assistant developer"
+    txtAbout.Text = txtAbout.Text & vbCrLf & "Special thanks to :: "
+    txtAbout.Text = txtAbout.Text & vbCrLf & " - many many guys on TrueBot & Paradizex Forum .."
+End Sub
+
+Private Sub Label3_Click()
+    ShellExecute nRetVal, "open", "http://tscafe.truedev.net/forum", "", "", 1
+End Sub
+
+Private Sub picIcon_Click()
+    ShellExecute nRetVal, "open", "http://www.manager.co.th", "", "", 1
+End Sub

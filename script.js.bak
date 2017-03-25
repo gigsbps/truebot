@@ -1,0 +1,143 @@
+var battle_count = 0; 
+var roundcount = 0; 
+
+var hpFractionEat = 0.8;	//บอทจะเริ่มกินเมื่อเลือดน้อยกว่า 80%
+var spFractionEat = 0.9;
+var hpFraction = 0.99;		//บอทจะกินถึง 95% ของเลือดจริง
+var spFraction = 0.99;
+var skillHealId = 0;		//0,1,2,3  	// 0 ปิดการฮิลนอกฉาก ไม่มีสกิลฮิลไดๆ; 1 วารีคืนพลัง; 2.รักษาบาดเจ็บ;3.สุดยอดรักษา
+var HealAmt = 115;		//ความแรงของสกิลฮีล
+var DisconFai = 40;		//ถ้าซื่อน้อยกว่านี้ให้ตัด
+var DisconnectFlag = 0.2; 	//ถ้าเลือดน้อยกว่านี้ให้ตัด
+var avoild9amFlag = 0;	// ตั้งว่าให้ ต่อบอทใหม่ตอน 9 โมงหรือไม่ 1=ต่อ 0=ไม่ต่อ
+
+var CurrentGodNum = 250;	// จำนวนเทพที่กินอยู่
+var NumToEat = 0;
+
+var LuckySlot = 0;
+
+var CheckPartyAlive=1;
+var Fightmode="Idie"
+
+var secCount = 0;
+
+var PartyLeader=158168;
+var PartyMember1=2206443;
+var PartyMember2=2202767;
+var PartyMember3=2206440;
+var PartyMember4=2099159;
+var PartySena=2099159;
+var PartyCountMember=5;
+
+function MyAttack(){
+	Monster = findMonster();
+	var MyChar = ts.Character;
+	var Monstername = NPC.Item(Monster.uid).CharName;
+	var Monsteralive = MonsterAlive();
+	if (Monstername=="ขงเบ้ง")
+	{
+		if (ts.Character.uid==PartyLeader){ BasicAttack(MyChar,Monster,"มือเปล่า"); }
+		if (ts.Character.uid==PartyMember1){ BasicAttack(MyChar,Monster,"ธนูไฟ"); }
+		if (ts.Character.uid==PartyMember2){ BasicAttack(MyChar,Monster,"ธนูไฟ"); }
+		if (ts.Character.uid==PartyMember3){ BasicAttack(MyChar,Monster,"ยิงก้อนหิน"); }
+		if (ts.Character.uid==PartyMember4){ BasicAttack(MyChar,Monster,"ไฟกวาดปฐพี"); }
+		//if (ts.Character.uid==PartyMember4){ ts.SendAttack(ts.Character.Row, ts.Character.Col, 0, 0, SkillID("วิชาไฟเพลิง")); }
+	}
+	else
+	{
+		if (ts.Character.uid==PartyLeader){ SwapLucky("Takeon"); }
+		if (ts.Character.uid==PartyMember1){ SwapLucky("Takeon"); }
+		if (ts.Character.uid==PartyMember2){ SwapLucky("Takeon"); }
+		if (ts.Character.uid==PartyMember3){ SwapLucky("Takeon"); }
+		if (ts.Character.uid==PartyMember4){ BasicAttack(MyChar,Monster,"ธนูไฟ"); }
+	}
+}
+/***********************************************************************************************/
+function MyPartnerAttack()
+{
+	Monster=findMonster();
+	var MyChar = ts.Character;
+	var MyPart=ts.CurrentPartner;
+	var Monstername=NPC.Item(Monster.uid).CharName;
+	var Monsteralive=MonsterAlive();
+	if (Monstername=="ขงเบ้ง")
+	{
+		if (ts.Character.uid==PartyLeader){ BasicAttack(MyPart,Monster,"มือเปล่า"); }
+		if (ts.Character.uid==PartyMember1){ BasicAttack(MyPart,Monster,"มือเปล่า"); }
+		if (ts.Character.uid==PartyMember2){ BasicAttack(MyPart,Monster,"มือเปล่า"); }
+		if (ts.Character.uid==PartyMember3){ BasicAttack(MyPart,Monster,"ธนูไฟ"); }
+		if (ts.Character.uid==PartyMember4){ BasicAttack(MyPart,Monster,"หงส์เพลิงถล่มฟ้า"); }
+	}
+	else
+	{
+		//Monsteralive=SelectF1Target();
+		if (ts.Character.uid==PartyLeader){ BasicAttack(MyPart,Monster,"มือเปล่า"); }
+		if (ts.Character.uid==PartyMember1){ BasicAttack(MyPart,Monster,"มือเปล่า"); }
+		if (ts.Character.uid==PartyMember2){ BasicAttack(MyPart,Monster,"มือเปล่า"); }
+		if (ts.Character.uid==PartyMember3){ BasicAttack(MyPart,Monster,"ธนูไฟ"); }
+		if (ts.Character.uid==PartyMember4){ BasicAttack(MyPart,Monster,"ธนูไฟ"); }
+	}
+}
+
+function BattleStoped()
+{
+	if ((ts.Character.uid != PartyLeader) && (ts.Character.uid != PartyMember4)){
+		SwapLucky("Takeoff");
+	}
+
+	// *************** สำคัญมาก ๆ กันขุนหนี ******************
+	CheckDisconnect();
+	ViewState();
+
+	// ************* กิน hp/sp + ฮีลนอกฉาก******************
+	AutoEatFood()
+
+	//******* ตัดสายตอน 8.50 โมงแล้วต่อใหม่หลัง 20 นาที ******
+	if (avoild9amFlag == 1){
+		Avoid9am();
+	}
+
+	//****************** บริจาค + ทิ้งของ *********************
+	AutoDropItems();
+	AutoContributeItems();
+	AutoSendItems();
+
+	if ((ts.Character.uid != PartyLeader) && (ts.Character.uid != PartyMember4)){
+		CurrentGodNum = CurrentGodNum -1;
+		EatGod();
+		secCount = 0;
+	}
+	//ContributingDupeSet("ราสเบอร์รี่");
+}
+
+function InitBot()
+{ 
+	if (ts.Character.uid != PartyMember4){
+		SwapLucky("Logon");
+	}
+
+	if (ts.Character.uid != PartyLeader){
+		ts.RequestParty(PartyLeader);
+	} //else {
+	//	Timer.Interval = 1000;
+	//	Timer.Enabled = true;
+	//}
+	FixTypeItemBug();
+	// ******** กิน hp/sp + ฮีลนอกฉาก**********
+	AutoEatFood();
+	
+	//***** ตรวจสอบเลือด + ซื่อลูกก่อนเริ่ม
+	CheckDisconnect();
+
+	//***** ตั้งค่ารายชื่อ ของ ดรอป + บริจาค
+	SetContributeItemList();
+	SetDropItemList();
+
+	// ***** หาก script ถูก จะขึ้น ข้อความนี้เป็นสีเขียว
+	debug("5. Script.js  -- loaded successful !!" , 0x00AA00);
+	debug("=== Successfull loading all scripts. ===" , 0x0000AA);
+}
+
+ 
+InitBot();
+

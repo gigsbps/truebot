@@ -1,0 +1,507 @@
+[Root]
+Most Recent Package=Standard Setup Package 4
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Programming\Public truebot\TrueBot_pub_1.9.8\pack
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+common.js=D:\Programming\Public truebot\TrueBot_pub_1.9.8\common.js
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\Program Files\TrueDisneyBot\RICHTX32.OCX=
+C:\Program Files\TrueDisneyBot\mscomctl.ocx=
+C:\Program Files\Project1\MSWINSCK.OCX=
+C:\Program Files\Project1\scrrun.dll=
+C:\WINDOWS\system32\msscript.ocx=
+C:\Program Files\TrueDisneyBot\comdlg32.ocx=
+C:\Program Files\True\RICHTX32.OCX=
+C:\Program Files\True\mscomctl.ocx=
+C:\Program Files\True\MSWINSCK.OCX=
+C:\Program Files\True\scrrun.dll=
+C:\Program Files\True\msscript.ocx=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+common.js=
+config.js=
+script.js=
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\true1.9.8.exe=Yes
+C:\Program Files\True\msscript.ocx=Yes
+C:\Program Files\True\scrrun.dll=Yes
+C:\Program Files\True\MSWINSCK.OCX=Yes
+C:\Program Files\True\mscomctl.ocx=Yes
+C:\Program Files\True\RICHTX32.OCX=Yes
+C:\Program Files\TrueDisneyBot\comdlg32.ocx=Yes
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\common.js=Yes
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\config.js=Yes
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\script.js=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.4.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msscript.ocx=$(AppPath)
+C:\Program Files\Project1\scrrun.dll=$(AppPath)
+C:\Program Files\Project1\MSWINSCK.OCX=$(AppPath)
+C:\Program Files\TrueDisneyBot\mscomctl.ocx=$(AppPath)
+C:\Program Files\TrueDisneyBot\RICHTX32.OCX=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.4\common.js=$(AppPath)
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.4\config.js=$(AppPath)
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.4\script.js=$(AppPath)
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.20.exe=$(AppPath)
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\true1.9.8.exe=$(AppPath)
+C:\Program Files\True\msscript.ocx=$(WinSysPath)
+C:\Program Files\True\scrrun.dll=$(WinSysPath)
+C:\Program Files\True\MSWINSCK.OCX=$(WinSysPath)
+C:\Program Files\True\mscomctl.ocx=$(WinSysPath)
+C:\Program Files\True\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\TrueDisneyBot\comdlg32.ocx=$(WinSysPath)
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\common.js=$(AppPath)
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\config.js=$(AppPath)
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\script.js=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.4.exe=Yes
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.4\common.js=No
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.4\config.js=No
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.4\script.js=No
+D:\Programming\Public truebot\TrueBot_pub\true1.9.7.20.exe=No
+C:\WINDOWS\system32\msscript.ocx=No
+C:\Program Files\Project1\scrrun.dll=No
+C:\Program Files\Project1\MSWINSCK.OCX=No
+C:\Program Files\TrueDisneyBot\mscomctl.ocx=No
+C:\Program Files\TrueDisneyBot\RICHTX32.OCX=No
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\true1.9.8.exe=No
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\common.js=No
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\config.js=No
+D:\Programming\Public truebot\TrueBot_pub_1.9.8\script.js=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=True1.9.8
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=True
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|True]
+Icon1=true1.9.7.4.exe
+Title1=True
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=D:\Programming\Public truebot\TrueBot_pub_1.9.8\pack
+ProjectFolder=D:\Programming\Public truebot\TrueBot_pub_1.9.8
+ServerSideCab=
+File1=D:\Programming\Public truebot\TrueBot_pub_1.9.8\pack\setup.exe
+File2=D:\Programming\Public truebot\TrueBot_pub_1.9.8\pack\Setup.Lst
+File3=D:\Programming\Public truebot\TrueBot_pub_1.9.8\pack\true1.9.8.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Programming\Public truebot\TrueBot_pub_2.0.1\Package (2)
+
+[Package|Standard Setup Package 2|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 2|Files Found]
+TrueDLL.dll=D:\Programming\TrueDLL\Debug\TrueDLL.dll
+
+[Package|Standard Setup Package 2|Files Released]
+
+[Package|Standard Setup Package 2|Missing Dependency Information]
+C:\WINDOWS\system32\msscript.ocx=
+
+[Package|Standard Setup Package 2|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\COMDLG32.OCX=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\scrrun.dll=
+
+[Package|Standard Setup Package 2|Files Added]
+
+[Package|Standard Setup Package 2|Files Removed]
+
+[Package|Standard Setup Package 2|Files In Project]
+D:\Programming\Public truebot\TrueBot_pub_2.0.1\True2.0.2.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Programming\TrueDLL\Debug\TrueDLL.dll=Yes
+C:\WINDOWS\system32\msscript.ocx=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\msvcrt.dll=Yes
+C:\WINDOWS\system32\MSWINSCK.OCX=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\RICHTX32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 2|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 2|Install Locations]
+D:\Programming\Public truebot\TrueBot_pub_2.0.1\True2.0.2.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Programming\TrueDLL\Debug\TrueDLL.dll=$(AppPath)
+C:\WINDOWS\system32\msscript.ocx=$(WinSysPath)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 2|Configure Shared Files]
+Applicable=Yes
+D:\Programming\Public truebot\TrueBot_pub_2.0.1\True2.0.2.exe=No
+D:\Programming\TrueDLL\Debug\TrueDLL.dll=No
+
+[Package|Standard Setup Package 2|Distribution]
+Type=single
+Size=
+Title=True
+
+[Package|Standard Setup Package 2|IconGroups]
+Group0=True
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 2|True]
+Icon1=True2.0.2.exe
+Title1=True
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 2|Package]
+PackageFolder=D:\Programming\Public truebot\TrueBot_pub_2.0.1\Package (2)
+ProjectFolder=D:\Programming\Public truebot\TrueBot_pub_2.0.1
+ServerSideCab=
+File1=D:\Programming\Public truebot\TrueBot_pub_2.0.1\Package (2)\setup.exe
+File2=D:\Programming\Public truebot\TrueBot_pub_2.0.1\Package (2)\Setup.Lst
+File3=D:\Programming\Public truebot\TrueBot_pub_2.0.1\Package (2)\True2.0.2.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 3|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Programming\Public truebot\TrueBot_pub_2.0.3\Package
+
+[Package|Standard Setup Package 3|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 3|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 3|Files Found]
+
+[Package|Standard Setup Package 3|Files Released]
+TrueDLL.DLL=
+
+[Package|Standard Setup Package 3|Missing Dependency Information]
+C:\WINDOWS\system32\msscript.ocx=
+
+[Package|Standard Setup Package 3|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\TABCTL32.OCX=
+C:\WINDOWS\system32\COMDLG32.OCX=
+C:\WINDOWS\system32\Richtx32.ocx=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\scrrun.dll=
+
+[Package|Standard Setup Package 3|Files Added]
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\true_script\common.js=
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\true_script\script.js=
+
+[Package|Standard Setup Package 3|Files Removed]
+
+[Package|Standard Setup Package 3|Files In Project]
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\True2.0.4.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\msscript.ocx=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\msvcrt.dll=Yes
+C:\WINDOWS\system32\MSWINSCK.OCX=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\Richtx32.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\true_script\common.js=Yes
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\true_script\script.js=Yes
+
+[Package|Standard Setup Package 3|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 3|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 3|Install Locations]
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\True2.0.4.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msscript.ocx=$(AppPath)\ocx
+C:\WINDOWS\system32\scrrun.dll=$(AppPath)\ocx
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSWINSCK.OCX=$(AppPath)\ocx
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(AppPath)\ocx
+C:\WINDOWS\system32\Richtx32.ocx=$(AppPath)\ocx
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\COMDLG32.OCX=$(AppPath)\ocx
+C:\WINDOWS\system32\TABCTL32.OCX=$(AppPath)\ocx
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\true_script\common.js=$(AppPath)\true_script
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\true_script\script.js=$(AppPath)\true_script
+
+[Package|Standard Setup Package 3|Configure Shared Files]
+Applicable=Yes
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\True2.0.4.exe=Yes
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\true_script\common.js=No
+D:\Programming\Public truebot\TrueBot_pub_2.0.3\true_script\script.js=No
+C:\WINDOWS\system32\msscript.ocx=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\MSWINSCK.OCX=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\Richtx32.ocx=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+
+[Package|Standard Setup Package 3|Distribution]
+Type=single
+Size=
+Title=True
+
+[Package|Standard Setup Package 3|IconGroups]
+Group0=True
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 3|True]
+Icon1=True2.0.4.exe
+Title1=True
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 3|Package]
+PackageFolder=D:\Programming\Public truebot\TrueBot_pub_2.0.3\Package
+ProjectFolder=D:\Programming\Public truebot\TrueBot_pub_2.0.3
+ServerSideCab=
+File1=D:\Programming\Public truebot\TrueBot_pub_2.0.3\Package\setup.exe
+File2=D:\Programming\Public truebot\TrueBot_pub_2.0.3\Package\Setup.Lst
+File3=D:\Programming\Public truebot\TrueBot_pub_2.0.3\Package\True2.0.4.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 4|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\Package
+
+[Package|Standard Setup Package 4|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 4|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 4|Files Found]
+
+[Package|Standard Setup Package 4|Files Released]
+
+[Package|Standard Setup Package 4|Missing Dependency Information]
+C:\WINDOWS\system32\msscript.ocx=
+
+[Package|Standard Setup Package 4|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\scrrun.dll=
+
+[Package|Standard Setup Package 4|Files Added]
+e:\truebot\tmp\public truebot\public truebot\ep6\truebotep6-thai3.0.x\testbot\digitall\item.dat=
+e:\truebot\tmp\public truebot\public truebot\ep6\truebotep6-thai3.0.x\testbot\digitall\main.js=
+e:\truebot\tmp\public truebot\public truebot\ep6\truebotep6-thai3.0.x\testbot\digitall\script.js=
+e:\truebot\tmp\public truebot\public truebot\ep6\truebotep6-thai3.0.x\testbot\digitall\profile.ini=
+e:\truebot\tmp\public truebot\public truebot\ep6\truebotep6-thai3.0.x\testbot\common.js=
+
+[Package|Standard Setup Package 4|Files Removed]
+
+[Package|Standard Setup Package 4|Files In Project]
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\truebot.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\msscript.ocx=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\msvcrt.dll=Yes
+C:\WINDOWS\system32\MSWINSCK.OCX=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\RICHTX32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\Item.Dat=Yes
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\main.js=Yes
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\script.js=Yes
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\profile.ini=Yes
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\common.js=Yes
+
+[Package|Standard Setup Package 4|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 4|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 4|Install Locations]
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\truebot.exe=$(AppPath)\character
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msscript.ocx=$(WinSysPath)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\Item.Dat=$(AppPath)\character
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\main.js=$(AppPath)\character
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\script.js=$(AppPath)\character
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\profile.ini=$(AppPath)\character
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\common.js=$(AppPath)
+
+[Package|Standard Setup Package 4|Configure Shared Files]
+Applicable=Yes
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\truebot.exe=No
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\Item.Dat=No
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\main.js=No
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\script.js=No
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\digitall\profile.ini=No
+E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\testbot\common.js=No
+
+[Package|Standard Setup Package 4|Distribution]
+Type=single
+Size=
+Title=Truebot(Thai)
+
+[Package|Standard Setup Package 4|Package]
+PackageFolder=E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\Package
+ProjectFolder=E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X
+ServerSideCab=
+File1=E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\Package\setup.exe
+File2=E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\Package\Setup.Lst
+File3=E:\truebot\tmp\Public truebot\Public truebot\EP6\truebotEP6-Thai3.0.X\Package\truebot.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Standard Setup Package 4|IconGroups]
+Group0=Truebot(Thai)
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 4|Truebot(Thai)]
+Icon1=truebot.exe
+Title1=Truebot(Thai)
+StartIn1=$(AppPath)
+Key1=Icon1
